@@ -1,0 +1,52 @@
+[
+  {
+  "name": "Loup garou",
+  "side": "Loup",
+    "Power": "Can kill a villager each night"
+  },
+  {
+    "name": "Loup noir",
+    "side": "Loup",
+    "Power": "Additional of power of werewolf, he wan infect the target of wold, and this people becomes a wolf"
+  },
+  {
+    "name": "Loup blanc",
+    "side": "Loup and alone",
+    "Power": "Additional of power of werewolf, one other day, he can kill one people"
+  },
+  {
+    "name": "Voyante",
+    "side": "Villageois",
+    "Power": "Each night, she can look a card"
+  },
+  {
+    "name": "Garde",
+    "side": "Villageois",
+    "Power": "Can protect a villager each night by the wolf"
+  },
+  {
+    "name": "Cupidon",
+    "side": "Villageois",
+    "Power": "During ce first night, he chooses 2 lovers"
+  },
+  {
+    "name": "Sorcière",
+    "side": "Villageois",
+    "Power": "She has 2 potions : 1 for kill and one for save"
+  },
+  {
+    "name": "Chasseur",
+    "side": "Villaegeois",
+    "Power": "When he deads, he can shoot someone"
+  },
+  {
+    "name": "Villageois",
+    "side": "Villageois",
+    "Power": "No power"
+  },
+  {
+    "name": "Petite fille",
+    "side": "Villageois",
+    "Power": "During the round of wolf, she can open her eyes"
+  }
+]
