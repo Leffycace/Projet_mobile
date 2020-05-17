@@ -1,4 +1,4 @@
-package com.example.projet_mobile;
+package com.example.projet_mobile.presentation.model.view;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +8,9 @@ import android.widget.TextView;
 import java.util.List;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.projet_mobile.R;
+import com.example.projet_mobile.presentation.model.model.Pokemon;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     private List<Pokemon> values;
