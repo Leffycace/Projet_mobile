@@ -14,17 +14,24 @@ import com.example.projet_mobile.presentation.model.model.Pokemon;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     private List<Pokemon> values;
+    private OnItemClickListener listener;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
     // you provide access to all the views for a data item in a view holder
+
+    public interface OnItemClickListener {
+        void onItemClick(Pokemon item);
+    }
+
+
     class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
         TextView txtHeader;
         TextView txtFooter;
         View layout;
 
-         ViewHolder(View v) {
+        ViewHolder(View v) {
             super(v);
             layout = v;
             txtHeader = (TextView) v.findViewById(R.id.firstLine);
@@ -43,20 +50,24 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public ListAdapter(List<Pokemon> myDataset) {
-        values = myDataset;
+    public ListAdapter(List<Pokemon> myDataset, OnItemClickListener listener) {
+        this.values = myDataset;
+        this.listener = listener;
+    }
+
+    public void setListener(OnItemClickListener listener) {
+        this.listener = listener;
     }
 
     // Create new views (invoked by the layout manager)
     @Override
     public ListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
-                                                   int viewType) {
+                                                     int viewType) {
         // create a new view
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View v = inflater.inflate(R.layout.row_layout, parent, false);
         // set the view's size, margins, paddings and layout parameters
-        ViewHolder vh = new ViewHolder(v);
-        return vh;
+        return new ViewHolder(v);
     }
 
     // Replace the contents of a view (invoked by the layout manager)
@@ -66,14 +77,13 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         // - replace the contents of the view with that element
         final Pokemon currentPokemon = values.get(position);
         holder.txtHeader.setText(currentPokemon.getName());
-        holder.txtHeader.setOnClickListener(new View.OnClickListener() {
+        holder.txtFooter.setText(currentPokemon.getUrl());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                remove(position);
+                listener.onItemClick(currentPokemon);
             }
         });
-
-        holder.txtFooter.setText(currentPokemon.getUrl());
     }
 
     // Return the size of your dataset (invoked by the layout manager)

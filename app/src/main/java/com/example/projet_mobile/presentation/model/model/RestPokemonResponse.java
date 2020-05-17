@@ -1,7 +1,5 @@
 package com.example.projet_mobile.presentation.model.model;
 
-import com.example.projet_mobile.presentation.model.model.Pokemon;
-
 import java.util.List;
 
 public class RestPokemonResponse {
