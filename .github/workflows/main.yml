@@ -1,0 +1,23 @@
+name: Test_compilation
+
+on:
+  push:
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: set up JDK 11
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11
+    - name: Make gradlew executable
+      run: chmod +x ./gradlew
+    - name: Build with Gradle
+      run: ./gradlew build
