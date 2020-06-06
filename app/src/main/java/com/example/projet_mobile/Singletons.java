@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.example.projet_mobile.data.PokeApi;
+import com.example.projet_mobile.data.PokeRepository;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -15,6 +16,7 @@ public class Singletons {
     private static Gson gsonInstance;
     private static PokeApi pokeApiInstance;
     private static SharedPreferences sharedPreferencesInstance;
+    private static PokeRepository pokeRepositoryInstance;
 
     public static Gson getGson() {
         if (gsonInstance == null) {
@@ -47,5 +49,11 @@ public class Singletons {
         return sharedPreferencesInstance;
     }
 
+    public static PokeRepository getPokeRepository(Context context) {
+        if (pokeRepositoryInstance == null){
+            pokeRepositoryInstance = new PokeRepository(getPokeApi(), getSharedPreferencesInstance(context), getGson());
+        }
+        return pokeRepositoryInstance;
+    }
 
 }

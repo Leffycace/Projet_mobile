@@ -26,7 +26,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        controller = new MainPresenter(this, Singletons.getPokeRepository(this));
         controller.onStart();
+
     }
 
     public void showlist(List<Pokemon> pokemonList) {

@@ -4,10 +4,8 @@ import com.example.projet_mobile.data.PokeCallBack;
 import com.example.projet_mobile.data.PokeRepository;
 import com.example.projet_mobile.presentation.model.model.Pokemon;
 import com.example.projet_mobile.presentation.model.view.MainActivity;
-import com.google.gson.Gson;
 
 import java.util.List;
-import java.util.Observable;
 
 public class MainPresenter {
 
