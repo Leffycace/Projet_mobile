@@ -22,8 +22,7 @@
 
 ## Descriptions
 
-Nous avons pour projet de créer une application permettant de communiquer avec une ou plusieurs personne. Il suffit de remplir un formulaire avec son prénom,
-mot de passe, adresse IP et le numéro de port. On pourra observer les anciens messages et les supprimer.
+J'avais pour projet de créer une application permettant de se connecter à une API rest, pour récupérer des informations et pour les affichers sur le portable.
 
 ## Technologies
 
@@ -31,9 +30,7 @@ Utiliser obligatoirement Android Studio (dernière version).
 
 ## How to use
 
-L'utilisateur devra s'enregistrer en remplissant un formulaire : username,password, adresse ip et le port. Ensuite il pourra se connecter.S'il souhaite communiquer, il lui
-suffira de créer une conversation en sélectionnant le(s) prénom(s) se trouvants sur une liste déroulante. Ensuite il pourra écrire du text dans un rectangle dédié et appuyer sur le bouton envoyer pour que le(s) destinataire(s) peut/puissent
-voir le message.
+L'utilisateur doit posséder un portable sous Android. Ensuite il a juste à cliquer sur l'application pour qu'elle se lance. Une fois l'application lancé, l'utilisateur peux scroller et cliquer sur n pokemon pour avoir davanatge de détails.
 
 ## Licence
 
