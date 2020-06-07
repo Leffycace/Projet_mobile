@@ -8,7 +8,7 @@
 
 
 <div align="center">
-    <img width="600" height="400" src="https://miro.medium.com/max/1400/1*ZGRXE9ReZsawGHtEn0kpmQ.jpeg"
+    <img width="600" height="400" src="![pokeball_10000_mah_01_l](https://user-images.githubusercontent.com/63095311/83967318-8f532700-a8c0-11ea-9b86-c964bf45a3b9.jpg)![pokeball_10000_mah_01_l](https://user-images.githubusercontent.com/63095311/83967318-8f532700-a8c0-11ea-9b86-c964bf45a3b9.jpg)"
 </div>
 
 <div align="justify">
