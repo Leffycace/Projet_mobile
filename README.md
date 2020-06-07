@@ -5,14 +5,6 @@
 
 ![pokeball_10000_mah_01_l](https://user-images.githubusercontent.com/63095311/83967369-fbce2600-a8c0-11ea-9989-910c2567b65f.jpg)
 
-
-
-<div align="center">
-    <img width="600" height="400" src="![pokeball_10000_mah_01_l](https://user-images.githubusercontent.com/63095311/83967318-8f532700-a8c0-11ea-9b86-c964bf45a3b9.jpg)![pokeball_10000_mah_01_l](https://user-images.githubusercontent.com/63095311/83967318-8f532700-a8c0-11ea-9b86-c964bf45a3b9.jpg)"
-</div>
-
-<div align="justify">
-
 ### Sommaire
 
 * `Participants`
@@ -25,11 +17,6 @@
 
 ## Participants
 
-* Augere Baptiste
-* Galloy Anrnaud
-* Abensur Maxime
-* Godzien Hector
-* Cruze Orka Arnest
 * Leffy Léo 
 
 
@@ -40,7 +27,7 @@ mot de passe, adresse IP et le numéro de port. On pourra observer les anciens m
 
 ## Technologies
 
-De préférence utiliser Eclipse avec java version 8.
+Utiliser obligatoirement Android Studio (dernière version).
 
 ## How to use
 
@@ -57,5 +44,5 @@ licensed under the CC BY-NC-SA 4.0 license.
 
 </div>
 
-<p align="center"><sub>Projet réalisé par l'équipe de L'ESIEA 3A-UFA ❤<p>
+<p align="center"><sub>Projet réalisé par Léo de L'ESIEA 3A-UFA ❤<p>
 
